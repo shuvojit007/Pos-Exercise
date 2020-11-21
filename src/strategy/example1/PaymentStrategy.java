@@ -1,4 +1,4 @@
-package strategy;
+package strategy.example1;
 
 /*
 Strategy pattern is also known as Policy Pattern

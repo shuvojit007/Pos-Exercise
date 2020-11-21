@@ -1,4 +1,4 @@
-package strategy;
+package strategy.example1;
 
 public class Item {
     private String upcCode;

@@ -1,6 +1,5 @@
-package strategy;
+package strategy.example1;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,4 +33,6 @@ public class ShoppingCart {
         int amount = calculateTotal();
         paymentMethod.pay(amount);
     }
+
+
 }
