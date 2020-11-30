@@ -1,0 +1,8 @@
+Exercise 3
+Implement Command Patterns for bank-accounts:
+1. Implement a class BankAccount with a single attribute balance!
+2. Implement an interface Command with two methods void execute() and void undo()!
+3. Implement this interface with two classes DepositCommand and WithDrawalCommand!
+4. Write a test case!
+5. What happens in case of failures?
+6. Can you execute a DepositCommand multiple times? How to avoid this?
