@@ -8,7 +8,7 @@ public class Program {
     List<Student> students;
 
     public Program(){
-        this.students=new ArrayList<Student>();
+        this.students= new ArrayList<>();
     }
 
     public void addStudent(Student student){
@@ -18,7 +18,10 @@ public class Program {
     public void removeStudent(Student student){
         this.students.remove(student);
     }
+
     public void displayStudent( Sorter sorter){
-        sorter.sort(students).forEach(Student->System.out.println(Student.toString()));
+
+        List<Student> std = sorter.sort(students);
+        std.forEach(Student -> System.out.println(Student.toString()));
     }
 }

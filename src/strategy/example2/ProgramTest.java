@@ -8,12 +8,14 @@ public class ProgramTest {
         program.addStudent(new Student(4,"Logan"));
         program.addStudent(new Student(8,"X-men"));
 
+        program.addStudent(new Student(-18,"Shourob Dada"));
+
         //sort by number
-        System.out.println("=======Sort Student by Number========");
-        program.displayStudent(new NumberSorter());
+       // System.out.println("=======Sort Student by Number========");
+        //program.displayStudent(new NumberSorter());
 
         //sort by name
         System.out.println("=======Sort Student by Name========");
-        program.displayStudent(new NameSorter());
+       program.displayStudent(new NameSorter());
     }
 }

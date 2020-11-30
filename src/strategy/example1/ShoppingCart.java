@@ -20,6 +20,7 @@ public class ShoppingCart {
         this.items.remove(item);
     }
 
+    //return total price
     public int calculateTotal(){
         int sum = 0;
         for(Item item : items){

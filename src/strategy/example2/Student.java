@@ -2,6 +2,7 @@ package strategy.example2;
 
 import java.util.List;
 
+
 public class Student {
     private int matriculationNumber;
     private String name;

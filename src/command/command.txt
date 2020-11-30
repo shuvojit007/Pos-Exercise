@@ -1,0 +1,20 @@
+
+Command is a behavioral design pattern that turns a request into a stand-alone object
+that contains all information about the request.
+
+Pros of Command Pattern
+
+ Single Responsibility Principle. You can decouple classes that invoke operations from classes that perform these operations.
+ Open/Closed Principle. You can introduce new commands into the app without breaking existing client code.
+ You can implement undo/redo.
+ You can implement deferred execution of operations.
+ You can assemble a set of simple commands into a complex one.
+
+Cons of Command Pattern
+
+ The code may become more complicated since you’re introducing a whole new layer between senders and receivers.
+
+
+links :
+1. https://refactoring.guru/design-patterns/command
+2. https://www.infoworld.com/article/2077569/java-tip-68--learn-how-to-implement-the-command-pattern-in-java.html
