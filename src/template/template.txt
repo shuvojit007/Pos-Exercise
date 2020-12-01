@@ -1,0 +1,23 @@
+
+
+Link : https://refactoring.guru/design-patterns/template-method/java/example
+
+Strategy Pattern vs Template Pattern
+
+1. In Strategy, the coupling between the client and strategy is more loose whereas in Template Method, the two modules are more tightly coupled.
+
+2. In Strategy, mostly an interface is used though abstract class can also be used depending on the situation, and concrete class is not used
+   whereas in Template method mostly abstract class or concrete class is used, interface is not used.
+
+3. In Strategy pattern, generally entire behaviour of the class is represented in terms of an interface, on the other hand, Template method
+   is used for reducing code duplication and the boilerplate code is defined in base framework or abstract class. In Template Method, there
+   can even be a concrete class with default implementation.
+
+4. In simple words, you can change the entire strategy (algorithm) in Strategy pattern, however, in Template method, only some things change
+   (parts of algorithm) and rest of the things remain unchanged. In Template Method, the invariant steps are implemented in an abstract base
+   class, while the variant steps are either given a default implementation, or no implementation at all. In Template method, the component
+   designer mandates the required steps of an algorithm, and the ordering of the steps, but allows the component client to extend or replace
+   some number of these steps.
+
+
+ More Details : https://stackoverflow.com/questions/669271/what-is-the-difference-between-the-template-method-and-the-strategy-patterns#:~:text=The%20difference%20between%20the%20two,%2D%2D%20the%20only%20choice%20left
