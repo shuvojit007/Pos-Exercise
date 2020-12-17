@@ -1,0 +1,4 @@
+According to GoF definition, an iterator pattern provides a way to access the
+elements of an aggregate object sequentially without exposing its underlying representation.
+It is behavioral design pattern.
+

@@ -1,6 +1,8 @@
 
 
-Link : https://refactoring.guru/design-patterns/template-method/java/example
+Link :
+1. https://refactoring.guru/design-patterns/template-method/java/example
+2. https://www.codiwan.com/template-method-design-pattern-real-world-example-java/#stage1
 
 Strategy Pattern vs Template Pattern
 

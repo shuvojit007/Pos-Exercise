@@ -19,20 +19,20 @@ public class SwitchBoard {
     // it is used for undo
     private Command lastCommand;
 
-    public Command getCommand(int i) {
-        if (i > commands.size()) {
-            throw new NoSuchElementException(String.format("The dashboard screen has only %d commands", commands.size()));
-        }
-        return commands.get(i);
-    }
+//    public Command getCommand(int i) {
+//        if (i > commands.size()) {
+//            throw new NoSuchElementException(String.format("The dashboard screen has only %d commands", commands.size()));
+//        }
+//        return commands.get(i);
+//    }
 
     public void addCommand(Command command) {
         commands.add(command);
     }
 
-    public void setCommand(int i, Command command) {
-        commands.add(i, command);
-    }
+//    public void setCommand(int i, Command command) {
+//        commands.add(i, command);
+//    }
 
     public void executeCommand(int i) {
         if (i > commands.size()) {

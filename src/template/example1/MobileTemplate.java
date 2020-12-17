@@ -4,8 +4,6 @@ public abstract class MobileTemplate {
 
     public abstract void doNetworkOperation();
 
-
-
     private void startWifi() {
         System.out.println("Starting wifi connection............");
     }
@@ -14,7 +12,7 @@ public abstract class MobileTemplate {
             System.out.println("Internet Connection is OK.......");
     }
 
-    public void startBrowsing() {
+    public void startUsing() {
         startWifi();
         checkInternet();
         doNetworkOperation();
@@ -22,3 +20,4 @@ public abstract class MobileTemplate {
     }
 
 }
+

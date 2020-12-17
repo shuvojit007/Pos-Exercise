@@ -6,16 +6,23 @@ public class Client {
 
     @Test
     public void clientInteraction(){
-
-        LightOneCommand light  = new LightOneCommand(new Light());
-        CameraStartRecordingCommand camera=  new CameraStartRecordingCommand(new Camera());
-
         SwitchBoard switchBoard = new SwitchBoard();
-        switchBoard.addCommand(light);
-        switchBoard.executeCommand(0);
+
+        Light bulb = new Light();
+        Camera cam = new Camera();
+
+
+        LightOneCommand light  = new LightOneCommand(bulb);
+        CameraStartRecordingCommand camera=  new CameraStartRecordingCommand(cam);
+
 
         switchBoard.addCommand(camera);
+        switchBoard.executeCommand(0);
+
+
+        switchBoard.addCommand(light);
         switchBoard.executeCommand(1);
+
 
         switchBoard.undo();
     }

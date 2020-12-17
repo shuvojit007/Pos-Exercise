@@ -10,14 +10,25 @@ public class Client {
     public void clientInteraction() {
         RemoteControl control = new RemoteControl();
         Light light = new Light();
+        Fan fan = new Fan();
+
 
         Command lightsOn = new LightOnCommand(light);
-        Command lightsOff = new LightOffCommand(light);
-
         control.setCommand(lightsOn);
         control.pressButton();
 
+
+        Command lightsOff = new LightOffCommand(light);
         control.setCommand(lightsOff);
+        control.pressButton();
+
+        Command fanOn = new FanOnCommand(fan);
+        control.setCommand(fanOn);
+        control.pressButton();
+
+
+        Command fanOff = new FanOffCommand(fan);
+        control.setCommand(fanOff);
         control.pressButton();
     }
 }
