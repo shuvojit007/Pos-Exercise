@@ -6,11 +6,11 @@ import org.junit.Test;
 public class ProxyTest {
     @Test
     public void checkProxy() {
-
-        // print all the  primes number which is smaller than or equal to n
+        // print all the  primes number which is smaller than n
         PrimeCheck primeCheck = new PrimeSieveProxy();
         primeCheck.getAllThePrime(10).forEach(System.out::println);
         primeCheck.getAllThePrime(5).forEach(System.out::println);
+
         primeCheck.getAllThePrime(10).forEach(System.out::println);
         primeCheck.getAllThePrime(5).forEach(System.out::println);
     }

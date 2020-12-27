@@ -11,7 +11,7 @@ public class PrimeSieveProxy extends PrimeSieve{
     }
 
     @Override
-    public List<Integer>  getAllThePrime(int n) {
+    public List<Integer> getAllThePrime(int n) {
         if(map.containsKey(n)){
             System.out.println("\n==============>Display the value from cache....");
             return map.get(n);

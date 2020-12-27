@@ -20,7 +20,7 @@ public class PrimeSieve implements PrimeCheck {
                     prime[i] = false;
             }
         }
-        // Print all prime numbers
+
         for (int i = 2; i <= n; i++) {
             if (prime[i])
                 listofPrime.add(i);
